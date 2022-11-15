@@ -21,6 +21,7 @@ module.exports = {
   ],
 
   rules: {
-    'vue/multi-word-component-names': ['off'] // vue文件必须小驼峰
+    'vue/multi-word-component-names': 'off', // vue文件必须小驼峰
+    '@typescript-eslint/no-explicit-any': 'off' // ts类型允许使用any
   }
 }

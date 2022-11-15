@@ -20,5 +20,7 @@ module.exports = {
     'plugin:prettier/recommended' // 加载了node_modules/eslint-plugin-prettier/eslint-plugin-prettier.js文件导出的configs中的recommended 解决prettier和eslint冲突问题
   ],
 
-  rules: {}
+  rules: {
+    'vue/multi-word-component-names': ['off'] // vue文件必须小驼峰
+  }
 }

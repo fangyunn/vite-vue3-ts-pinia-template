@@ -8,8 +8,7 @@ export default defineConfig({
   resolve: {
     // 设置别名
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      comps: path.resolve(__dirname, 'src/components')
+      '@': path.resolve(__dirname, 'src')
     }
   },
   plugins: [vue()],

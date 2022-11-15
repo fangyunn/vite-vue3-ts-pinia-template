@@ -2,7 +2,7 @@ module.exports = {
   extends: ['@commitlint/config-conventional', 'cz'],
   rules: {
     'type-enum': [
-      3,
+      2,
       'always',
       [
         'feature', // 新功能

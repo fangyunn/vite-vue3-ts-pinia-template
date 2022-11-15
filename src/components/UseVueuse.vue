@@ -1,7 +1,6 @@
 <template>
   <div>
     <h1>测试vueUse的鼠标坐标</h1>
-
     <h3>Mouse:{{ x }},{{ y }}</h3>
   </div>
 </template>
@@ -11,4 +10,8 @@ import { useMouse } from '@vueuse/core'
 const { x, y } = useMouse()
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+div {
+  color: bisque;
+}
+</style>

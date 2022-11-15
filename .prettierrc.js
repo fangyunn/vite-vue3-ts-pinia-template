@@ -14,5 +14,5 @@ module.exports = {
   proseWrap: 'preserve', // 使用默认的折行标准
   htlmWhitespaceSensitivity: 'css', // 根据显式样式决定html要不要折行
   endOfLine: 'auto', // 换行符使用lf
-  trailingComma: 'none'
+  trailingComma: 'none' // 最后行尾逗号取消
 }

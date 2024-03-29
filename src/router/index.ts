@@ -1,31 +1,12 @@
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-
-const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/login',
-    name: 'Login',
-    meta: {
-      title: '登录',
-      keepAlive: true,
-      requireAuth: false
-    },
-    component: () => import('@/views/Login/index.vue')
-  },
-  {
-    path: '/',
-    name: 'Index',
-    meta: {
-      title: '首页',
-      keepAlive: true,
-      requireAuth: false
-    },
-    component: () => import('@/views/index.vue')
-  }
-]
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
+import { basicRoute } from './routes'
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes
+  history: createWebHashHistory(),
+  // RouteRecordRaw 是路由配置信息类型
+  routes: basicRoute as unknown as RouteRecordRaw[],
+  // 是否应该禁止尾部斜杠。默认为假
+  strict: true
 })
 
 export default router

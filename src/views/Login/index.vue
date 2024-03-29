@@ -1,7 +1,5 @@
 <template>
-  <div>登录</div>
-  <span>111</span>
-  <span>222</span>
+  <div class="font-bold">111</div>
 </template>
 
 <script setup></script>

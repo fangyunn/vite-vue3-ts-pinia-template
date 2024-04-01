@@ -554,6 +554,19 @@ video {
   --tw-contain-style:  ;
 }
 
-.font-bold {
-  font-weight: 700;
+.relative {
+  position: relative;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

@@ -1,5 +1,8 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // 如果找不到path模块或其相对应的类型声明 输入命令 pnpm install @types/node --save-dev
 import path from 'path'
@@ -11,7 +14,15 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src')
     }
   },
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    AutoImport({
+      resolvers: [ElementPlusResolver()]
+    }),
+    Components({
+      resolvers: [ElementPlusResolver()]
+    })
+  ],
 
   // 开发服务器选项
   server: {
